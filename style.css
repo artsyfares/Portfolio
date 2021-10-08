@@ -1,0 +1,774 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'josefin sans', sans-serif;
+    background-color: #212738;
+}
+
+header {
+    padding-top: 40px;
+    margin: auto;
+    max-width: 1100px;
+    background-color: #212738;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 200px;
+}
+
+.logo-image {
+    width: 100%;
+}
+
+.navlinks {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.navlink {
+    list-style: none;
+    padding: 0 15px;
+    position: relative;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    position: relative;
+}
+
+.navlink a,
+.navlink a:after,
+.navlink a:before {
+    transition: all .5s ease;
+}
+
+.navlink a:hover {
+    color: #d1d646;
+}
+
+.navlink a:after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 0%;
+    content: '';
+    color: transparent;
+    background: #fff;
+    height: 1px;
+}
+
+.navlink a:hover:after {
+    width: 100%;
+}
+
+.contact {
+    list-style: none;
+    background-color: #d1d646;
+    border-radius: 20px;
+    padding: 10px 25px;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: all 150ms ease;
+}
+
+.contact:hover {
+    opacity: .9;
+}
+
+.contact a {
+    color: #212738;
+    font-weight: 700;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 50px 0;
+}
+
+.hero-image {
+    width: 250px;
+}
+
+.hero-text {
+    color: white;
+}
+
+.hero-heading {
+    font-family: 'Abril Fatface', cursive;
+    letter-spacing: 2px;
+    padding-bottom: 20px;
+    color: #d1d646;
+    font-size: 2.5rem;
+}
+
+.hero-paragraph {
+    width: 85%;
+    padding-bottom: 35px;
+    font-weight: 300;
+    font-size: 1.1rem;
+}
+
+.mywork {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.buttons {
+    margin-left: 100px;
+}
+
+.about {
+    text-align: center;
+    padding: 30px 0;
+    margin-top: 15px;
+    background-color: white;
+}
+
+.about-heading {
+    font-family: 'Abril Fatface', cursive;
+    padding-bottom: 20px;
+    color: #212738;
+    font-size: 2.5rem;
+}
+
+.about-paragraph {
+    width: 45%;
+    margin: auto;
+    padding-bottom: 35px;
+    font-weight: 400;
+    font-size: 1.1rem;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.cards {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 60%;
+    margin: auto;
+    gap: 100px;
+}
+
+.card {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    height: 250px;
+    padding: 30px 0;
+    transition: all 300ms ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card i {
+    font-size: 4rem;
+    padding-bottom: 30px;
+    color: #212738;
+}
+
+.card h3 {
+    font-family: abril fatface;
+    color: #212738;
+    padding-bottom: 20px;
+}
+
+.card h6 {
+    font-size: 0.9rem;
+    font-weight: 400;
+    width: 70%;
+    margin: auto;
+}
+
+.portfolio {
+    text-align: center;
+    padding: 30px 0;
+    background-color: white;
+}
+
+.portfolio-heading {
+    font-family: 'Abril Fatface', cursive;
+    padding-bottom: 20px;
+    color: #212738;
+    font-size: 2.5rem;
+}
+
+.portfolio-paragraph {
+    width: 45%;
+    margin: auto;
+    padding-bottom: 35px;
+    font-weight: 400;
+    font-size: 1.1rem;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.portfolio-item {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    margin: auto;
+    gap: 50px;
+}
+
+.item-image {
+    margin: 30px 0;
+    position: relative;
+    align-self: center;
+}
+
+.shadow {
+    width: 400px;
+    height: 250px;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.left-image {
+    width: 400px;
+    position: absolute;
+    bottom: 15px;
+    right: -20px;
+    transition: all 300ms ease;
+}
+
+.portfolio-item:hover .left-image {
+    bottom: 0px;
+    right: 0px;
+}
+
+.item-text {
+    text-align: justify;
+    align-self: flex-start;
+    margin-top: 40px;
+}
+
+.item-title {
+    font-family: 'Abril Fatface', cursive;
+    color: #212738;
+    padding-bottom: 20px;
+}
+
+.item-description {
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.right-image {
+    width: 400px;
+    position: absolute;
+    bottom: 15px;
+    left: -20px;
+    transition: all 300ms ease;
+}
+
+.portfolio-item:hover .right-image {
+    bottom: 0px;
+    left: 0px;
+}
+
+.clients {
+    text-align: center;
+    padding: 30px 0;
+}
+
+.clients-heading {
+    font-family: 'Abril Fatface', cursive;
+    padding-bottom: 20px;
+    color: #d1d646;
+    font-size: 2.5rem;
+}
+
+.clients-paragraph {
+    width: 45%;
+    margin: auto;
+    padding-bottom: 35px;
+    font-weight: 400;
+    font-size: 1.1rem;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.icons {
+    font-size: 2rem;
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.icons i {
+    padding: 0 30px;
+}
+
+.contactus {
+    text-align: center;
+    padding: 30px 0;
+    background-color: white;
+}
+
+.contactus-heading {
+    font-family: 'Abril Fatface', cursive;
+    padding-bottom: 20px;
+    color: #212738;
+    font-size: 2.5rem;
+}
+
+.contactus-paragraph {
+    width: 45%;
+    margin: auto;
+    padding-bottom: 35px;
+    font-weight: 400;
+    font-size: 1.1rem;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+input {
+    font-family: josefin sans;
+    border: none;
+    border-bottom: 3px solid #212738;
+    width: 250px;
+    margin: 0 20px;
+    outline: none;
+    font-size: 1rem;
+}
+
+textarea {
+    display: block;
+    margin-top: 30px;
+    font-family: josefin sans;
+    outline: none;
+    font-size: 1rem;
+    border: 2px solid #212738;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 35px;
+    padding: 15px;
+    resize: none;
+}
+
+.dark {
+    background-color: #212738;
+    color: white;
+    border-radius: 0;
+    margin-top: 50px;
+    cursor: pointer;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+}
+
+footer h3 {
+    font-weight: 300;
+}
+
+footer h3,
+.social {
+    padding: 40px 0;
+}
+
+.love i {
+    color: #f97068;
+}
+
+.social i {
+    font-size: 1.5rem;
+    padding: 0 10px;
+    transition: all 150ms ease;
+}
+
+.fa-github:hover {
+    color: #2DBA4E;
+}
+
+.fa-twitter:hover {
+    color: #1DA1F2;
+}
+
+.fa-instagram:hover {
+    color: #DD2A7B;
+}
+
+.fa-facebook:hover {
+    color: #1877F2;
+}
+
+@media (max-width: 480px) {
+
+    .logo {
+        margin-bottom: 30px;
+        margin-top: -15px;
+    }
+
+    .hero {
+        width: 100%;
+        margin: auto;
+    }
+
+    nav {
+        max-width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        margin: auto;
+    }
+
+    .navlinks {
+        width: 98%;
+        flex-wrap: wrap;
+    }
+
+    .navlink {
+        padding-bottom: 30px;
+    }
+
+    .hero-image {
+        display: none;
+    }
+
+    .hero {
+        text-align: center;
+        margin-top: 30px;
+
+    }
+
+    .hero-paragraph {
+        width: 98%;
+        margin: auto;
+    }
+
+    .buttons {
+        margin: auto;
+        margin-bottom: 30px;
+    }
+
+    .about {
+        width: 100vw;
+    }
+
+    .cards {
+        flex-direction: column;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .card {
+        margin-bottom: -50px;
+        width: 100%;
+
+    }
+
+    .card:last-child {
+        margin-bottom: 30px;
+    }
+
+    .about-paragraph {
+        padding-bottom: 50px;
+        width: 90%;
+    }
+
+    .portfolio-item {
+        flex-direction: column;
+        justify-content: center;
+        gap: 0px;
+        flex-wrap: wrap;
+        width: 90%;
+    }
+
+    .inverse {
+        flex-direction: column-reverse;
+    }
+
+    .item-image {
+        margin-bottom: 0px;
+        width: 100%;
+    }
+
+    .right-image,
+    .left-image {
+        position: static;
+        width: 100%;
+    }
+
+    .shadow {
+        display: none;
+    }
+
+    .item-text {
+        text-align: center;
+    }
+
+    .portfolio-paragraph {
+        width: 90%;
+    }
+
+    .clients-paragraph {
+        width: 98%;
+    }
+
+    .icons i {
+        padding: 0 20px;
+    }
+
+    .clients-paragraph {
+        line-height: 20px;
+    }
+
+    .contactus-paragraph {
+        width: 90%;
+        line-height: 20px;
+    }
+
+    input {
+        margin: 20px 0;
+        width: 80%;
+        padding: 5px 5px;
+    }
+
+    input:first-child {
+        margin-top: 0;
+    }
+
+    textarea {
+        width: 80%;
+    }
+
+    footer {
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+@media (max-width:768px) {
+    .logo {
+        margin-bottom: 30px;
+        margin-top: -15px;
+    }
+
+    .hero {
+        width: 100%;
+        margin: auto;
+    }
+
+    nav {
+        max-width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        margin: auto;
+        margin-bottom: 15px;
+    }
+
+    .navlinks {
+        width: 98%;
+        flex-wrap: wrap;
+    }
+
+    .navlink {
+        padding-bottom: 30px;
+    }
+
+    .hero-image {
+        display: none;
+    }
+
+    .hero {
+        text-align: center;
+        margin-top: 30px;
+
+    }
+
+    .hero-paragraph {
+        width: 98%;
+        margin: auto;
+    }
+
+    .buttons {
+        margin: auto;
+        margin-bottom: 30px;
+    }
+
+    .about {
+        width: 100vw;
+    }
+
+    .cards {
+        flex-direction: column;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .card {
+        margin-bottom: -50px;
+        width: 100%;
+
+    }
+
+    .card:last-child {
+        margin-bottom: 30px;
+    }
+
+    .about-paragraph {
+        padding-bottom: 50px;
+        width: 90%;
+    }
+
+    .portfolio-item {
+        flex-direction: column;
+        justify-content: center;
+        gap: 0px;
+        flex-wrap: wrap;
+        width: 90%;
+    }
+
+    .inverse {
+        flex-direction: column-reverse;
+    }
+
+    .item-image {
+        margin-bottom: 0px;
+        width: 100%;
+    }
+
+    .right-image,
+    .left-image {
+        position: static;
+        width: 100%;
+    }
+
+    .shadow {
+        display: none;
+    }
+
+    .item-text {
+        text-align: center;
+    }
+
+    .portfolio-paragraph {
+        width: 90%;
+    }
+
+    .clients-paragraph {
+        width: 98%;
+    }
+
+    .icons i {
+        padding: 0 20px;
+    }
+
+    .clients-paragraph {
+        line-height: 20px;
+    }
+
+    .contactus-paragraph {
+        width: 90%;
+        line-height: 20px;
+    }
+
+    input {
+        margin: 20px 0;
+        width: 80%;
+        padding: 5px 5px;
+    }
+
+    input:first-child {
+        margin-top: 0;
+    }
+
+    textarea {
+        width: 80%;
+    }
+
+    footer {
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+@media (max-width:1024px) {
+
+    .hero {
+        width: 80%;
+        margin: auto;
+    }
+
+    .hero-image {
+        width: 30%;
+        margin: 30px 0;
+    }
+
+    nav {
+        max-width: 100%;
+        justify-content: space-around;
+    }
+
+    .navlinks {
+        width: 98%;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+
+    .hero-paragraph {
+        width: 98%;
+        margin: auto;
+    }
+
+    .about {
+        width: 100%;
+    }
+
+    .cards {
+        justify-content: space-between;
+        width: 90%;
+    }
+
+
+    .about-paragraph {
+        padding-bottom: 50px;
+        width: 70%;
+    }
+
+    .portfolio-item {
+        width: 90%;
+    }
+
+    .item-image {
+        margin-bottom: 0px;
+        width: 100%;
+    }
+
+    .portfolio-paragraph {
+        width: 70%;
+    }
+
+    .clients-paragraph {
+        width: 70%;
+    }
+
+    .clients-paragraph {
+        line-height: 20px;
+    }
+
+    .contactus-paragraph {
+        width: 90%;
+        line-height: 20px;
+    }
+}
